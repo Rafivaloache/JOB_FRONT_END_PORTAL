@@ -35,7 +35,7 @@ const ContactUs = () => {
     try{
 
         
-        const res = await axios.post('job-portal-website-back-end.vercel.app/send-email',data);
+        const res = await axios.post('https://job-portal-website-back-end.vercel.app/send-email',data);
 
         
 

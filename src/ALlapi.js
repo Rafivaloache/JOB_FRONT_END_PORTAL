@@ -148,7 +148,7 @@ export const createProfilePic = async (data) => {
 
 export const createCoverPic = async (data) => {
     
-    // const res = await axios.post(`job-portal-website-back-end.vercel.app/api/profile/create-updated-cover-pic`,data);
+    // const res = await axios.post(`https://job-portal-website-back-end.vercel.app/api/profile/create-updated-cover-pic`,data);
     const res = await fetch(`${import.meta.env.VITE_PROFILE_PIC_REQUEST}/create-updated-cover-pic`, { method: "POST", body: data, credentials: "include" });
     const data2 = res.json();
     return data2

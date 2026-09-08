@@ -140,7 +140,7 @@ const ProfileForm = () => {
             const res = await createProfilePic.mutateAsync(formdata);
             
             
-            const data = `job-portal-website-back-end.vercel.app${res?.imageUrl}`
+            const data = `https://job-portal-website-back-end.vercel.app/${res?.imageUrl}`
            
             setshowImageProfile(data);
             setshowImageProfilefullInfo(res);
@@ -160,7 +160,7 @@ const ProfileForm = () => {
             formdata.append("cover_picture", file);
             const res = await createProfile_Cover_Pic.mutateAsync(formdata);
             
-            const data = `job-portal-website-back-end.vercel.app${res?.imageUrl}`
+            const data = `https://job-portal-website-back-end.vercel.app/${res?.imageUrl}`
             setshowImageCover(data);
             setshowImageCoverfullInfo(res);
             

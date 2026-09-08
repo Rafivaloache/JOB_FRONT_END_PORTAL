@@ -42,7 +42,7 @@ const CreateJobForm = () => {
            
             skills: skills
         };  
-        const response = await axios.post('job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-core-responsibilities', jobInfo);
+        const response = await axios.post('https://job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-core-responsibilities', jobInfo);
         setValue('core_responsibility', response.data.core_responsibility, {
             shouldDirty: true,
             shouldValidate: true
@@ -108,7 +108,7 @@ const CreateJobForm = () => {
            
     //         skills: skills
     //     };  
-    //     const response = await axios.post('job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-core-responsibilities', jobInfo);
+    //     const response = await axios.post('https://job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-core-responsibilities', jobInfo);
     //     setValue('core_responsibility', response.data.core_responsibility, {
     //         shouldDirty: true,
     //         shouldValidate: true
@@ -145,7 +145,7 @@ const CreateJobForm = () => {
 
         setLoadingGenerateKey(true);
         try{
-             const res = await axios.post('job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-key-responsibilities', jobInfo);
+             const res = await axios.post('https://job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-key-responsibilities', jobInfo);
              setValue('key_responsibility', res.data.key_responsibilities, {
                 shouldDirty: true,
                 shouldValidate: true
@@ -183,7 +183,7 @@ const CreateJobForm = () => {
             skills: skills
         };
 
-        const response = await axios.post('job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-text-job-overView', jobInfo);
+        const response = await axios.post('https://job-portal-website-back-end.vercel.app/api/generate-AI-text/generate-text-job-overView', jobInfo);
         (response);
         setValue('job_overview', response.data.overview, {
                 shouldDirty: true,

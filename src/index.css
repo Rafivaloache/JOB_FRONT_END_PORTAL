@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+.manrope{
+  font-family: "Manrope", sans-serif;
+ 
+}
+
+.works{
+  font-family: "Work Sans", sans-serif; 
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+}
+
+.jetbrains{
+  font-family: "JetBrains Mono", monospace;
+}
+
+.active{
+  background-color: white;
+}
